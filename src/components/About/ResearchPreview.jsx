@@ -48,7 +48,7 @@ function ResearchPreview({ title, institution, duration, highlights, link, advis
 
       {link && (
         <a
-          href={`/blogs/${link}`}
+          href={`/#/blogs/${link}`}
           target="_blank"
           rel="noopener noreferrer"
           className="education-toggle pill-btn research-read-more"
