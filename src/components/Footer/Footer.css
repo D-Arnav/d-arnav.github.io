@@ -1,0 +1,101 @@
+.footer {
+  margin-top: 160px;
+  padding: 48px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-built {
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-icon {
+  display: inline-block;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.react-icon {
+  color: #61dafb;
+  font-size: 15px;
+}
+
+.vite-icon {
+  color: #646cff;
+  font-size: 16px;
+}
+
+.footer-icon:hover {
+  transform: translateY(-2px) scale(1.1);
+}
+
+.footer-text {
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.to-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  padding: 6px;
+
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.to-top:hover {
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.to-top-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.to-top:hover .to-top-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .to-top {
+    justify-content: center;
+  }
+}

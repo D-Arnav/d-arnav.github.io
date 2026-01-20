@@ -1,0 +1,51 @@
+.industry-item {
+  margin-bottom: 48px;
+}
+
+/* Header */
+.industry-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.industry-role {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.industry-company {
+  font-size: 18px;
+  color: var(--secondary);
+}
+
+/* Duration */
+.industry-duration {
+  margin-top: 8px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Points */
+.industry-points {
+  margin-top: 24px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.industry-points li {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.industry-points li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}

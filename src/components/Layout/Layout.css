@@ -1,0 +1,25 @@
+.page {
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin-left: 140px;
+  margin-right: auto;
+  padding-right: 40px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .container {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-inner,
+  .container {
+    margin-left: 0;
+    padding: 0 24px;
+  }
+}

@@ -1,0 +1,198 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+}
+
+.project-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.project-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(183, 5, 57, 0.05), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.project-item:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border-color: rgba(183, 5, 57, 0.4);
+    transform: translateY(-6px);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(183, 5, 57, 0.2),
+        0 0 60px rgba(183, 5, 57, 0.1);
+}
+
+.project-item:hover::before {
+    opacity: 1;
+}
+
+.project-item:hover::after {
+    opacity: 1;
+}
+
+.project-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: baseline;
+    margin-bottom: 12px;
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+}
+
+.project-org {
+    font-size: 18px;
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+.project-duration {
+    font-size: 13px;
+    color: rgba(243, 183, 200, 0.5);
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.project-desc {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.65;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.project-highlights {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.project-highlights li {
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+}
+
+.project-highlights li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #F3B7C8;
+    font-size: 14px;
+}
+
+.project-image-container {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    flex-shrink: 0;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.project-item:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-tags {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+    margin-top: auto;
+}
+
+.tag {
+    padding: 7px 14px;
+    background: linear-gradient(135deg,
+            rgba(183, 5, 57, 0.12) 0%,
+            rgba(183, 5, 57, 0.06) 100%);
+    border: 1px solid rgba(243, 183, 200, 0.4);
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: linear-gradient(135deg,
+            rgba(183, 5, 57, 0.2) 0%,
+            rgba(183, 5, 57, 0.1) 100%);
+    border-color: rgba(183, 5, 57, 0.5);
+    transform: translateY(-1px);
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.project-links .pill-btn.icon-only {
+    min-width: auto;
+    padding: 12px 16px;
+    border-radius: 14px;
+}
+
+.project-links .pill-btn.icon-only svg {
+    font-size: 20px;
+}

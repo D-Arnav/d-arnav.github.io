@@ -1,0 +1,312 @@
+.blog-page {
+    padding: 80px 20px 40px 20px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.blog-page h1 {
+    font-family: "Jersey 20", sans-serif;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--text);
+    margin: 0 0 16px;
+}
+
+.blog-title-top {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+}
+
+.blog-title-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 4px 0 8px;
+}
+
+.blog-title-meta .blog-author {
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.blog-title-meta .blog-date {
+    margin-left: auto;
+    margin-right: 20px;
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.blog-page h1 span {
+    position: relative;
+    color: var(--primary);
+    text-shadow:
+        0 0 12px rgba(183, 5, 57, 0.25),
+        0 0 24px rgba(183, 5, 57, 0.15);
+}
+
+.blog-page hr {
+    margin: 10px 0 30px;
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1)
+}
+
+.blog-page h2,
+.blog-page h3,
+.blog-page h4,
+.blog-page h5,
+.blog-page h6 {
+    font-family: "Jost", sans-serif;
+    font-weight: 650;
+    line-height: 1.25;
+    color: #ffffff;
+}
+
+.blog-page h2 {
+    margin: 28px 0 12px;
+    font-size: 32px;
+}
+
+.blog-page h3 {
+    margin: 24px 0 10px;
+    font-size: 26px;
+}
+
+.blog-page h4 {
+    margin: 18px 0 8px;
+    font-size: 22px;
+}
+
+.blog-page h5 {
+    margin: 14px 0 6px;
+    font-size: 18px;
+}
+
+.blog-page h6 {
+    margin: 12px 0 6px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+
+.blog-page p {
+    font-family: "Jost", sans-serif;
+    font-size: 17px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.blog-page p:last-of-type {
+    margin-bottom: 0;
+}
+
+.blog-page span {
+    color: var(--secondary);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: default;
+}
+
+.blog-page span.blog-math {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 400 !important;
+}
+
+.blog-math .katex {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.blog-math .katex * {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.blog-math .katex-mathml {
+    display: none;
+}
+
+.blog-page a {
+    color: var(--primary);
+}
+
+.blog-page img {
+    display: block;
+    max-width: 100%;
+    resize: both;
+    height: auto;
+    margin: 24px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-image-container {
+    margin: 24px 0;
+}
+
+.blog-image-container img {
+    margin: 0 auto;
+}
+
+.blog-image-caption {
+    font-family: "Jost", sans-serif;
+    font-size: 14px !important;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center !important;
+    margin: 8px auto 0;
+    max-width: 90%;
+    line-height: 1.2;
+}
+
+.blog-math {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.blog-math.blog-math-display {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0 24px 0;
+}
+
+.blog-page ul {
+    font-family: "Jost", sans-serif;
+    font-size: 17px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 16px 0;
+    padding-left: 24px;
+}
+
+.blog-page ul li {
+    margin-bottom: 8px;
+}
+
+
+.blog-page ol {
+    font-family: "Jost", sans-serif;
+    font-size: 17px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 16px 0;
+    padding-left: 24px;
+}
+
+.blog-page ol li {
+    margin-bottom: 8px;
+}
+
+
+.blog-page blockquote {
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 24px 0;
+    padding: 16px 20px;
+    border-left: 4px solid var(--primary);
+    background: rgba(183, 5, 57, 0.1);
+    font-style: italic;
+}
+
+.blog-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+}
+
+.blog-page table th {
+    background: rgba(183, 5, 57, 0.2);
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid var(--primary);
+}
+
+.blog-page table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.blog-page table tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.blog-page strong {
+    color: var(--secondary);
+    /* color: #ffffff; */
+    font-weight: 500;
+    /* font-style: italic; */
+}
+
+.blog-page em {
+    color: var(--secondary);
+    font-style: normal;
+}
+/* Blog List Styles */
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.blog-link-item {
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    transition: all 0.3s ease;
+}
+
+.blog-link-item:hover {
+    border-color: var(--primary);
+    background: rgba(183, 5, 57, 0.05);
+    transform: translateY(-2px);
+}
+
+.blog-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.blog-link h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: var(--text);
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+}
+
+.blog-link .blog-date {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.blog-content ul {
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+.blog-content li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.8));
+}

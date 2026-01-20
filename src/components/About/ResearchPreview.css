@@ -1,0 +1,108 @@
+.research-preview {
+  margin-bottom: 48px;
+}
+
+/* Title row */
+.research-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.research-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.research-org {
+  font-size: 18px;
+  color: var(--secondary);
+}
+
+/* Duration */
+.research-duration {
+  margin-top: 8px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.research-sep {
+  margin: 0 6px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.research-advisor {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.research-advisor-name {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.research-advisor-name:hover {
+  opacity: 0.8;
+}
+
+.research-advisor-desc {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.research-advisor-desc:hover {
+  opacity: 0.8;
+}
+
+/* Highlights */
+.research-highlights {
+  margin-top: 24px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.research-highlights li {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.research-highlights li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
+/* Read more link */
+.research-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--primary);
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.research-link:hover {
+  transform: translateX(4px);
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .research-title {
+    font-size: 20px;
+  }
+
+  .research-org {
+    font-size: 16px;
+  }
+}
+
+.research-read-more {
+  margin-top: 16px;
+}

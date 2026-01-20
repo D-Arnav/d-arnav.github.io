@@ -1,0 +1,80 @@
+.mail-wrapper {
+  position: relative;
+  padding: 6px;
+}
+
+.mail {
+  color: var(--text);
+  transition: opacity 0.2s ease;
+}
+
+.mail:hover {
+    color: var(--primary);
+}
+
+.mail-tooltip {
+  position: absolute;
+  top: 80%;
+  margin-top: 6px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  visibility: hidden;
+
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(183, 5, 57, 0.4);
+  padding: 8px 14px;
+  border-radius: 6px;
+
+  font-size: 14px;
+  color: var(--text);
+
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+
+  transition: 
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0s linear 0.2s;
+}
+
+.mail-tooltip::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: 12px;
+  width: 8px;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.75);
+  border-left: 1px solid rgba(183, 5, 57, 0.4);
+  border-top: 1px solid rgba(183, 5, 57, 0.4);
+  transform: rotate(45deg);
+}
+
+.mail-wrapper:hover .mail-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.mail-text {
+  font-family: "Jost", sans-serif;
+  white-space: nowrap;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  color: var(--secondary);
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.copy-btn:hover {
+  color: var(--primary);
+}
