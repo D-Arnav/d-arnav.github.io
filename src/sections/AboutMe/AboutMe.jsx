@@ -88,7 +88,7 @@ function AboutMe() {
                 <p>
                   I've built award-winning <span>competition robots</span> as a founding member of team TEQQ Televisors,
                   winning the Robofest 2019 and 2020 world championships. Over 5 years of activity, we participated
-                  in 18 competitions, winning 15 awards in total. <a className="read-more" href='/blogs/robotics' target="_blank" rel="noopener noreferrer">Award list</a>
+                  in 18 competitions, winning 15 awards in total. <a className="read-more" href='/#/blogs/robotics' target="_blank" rel="noopener noreferrer">Award list</a>
                 </p>
                 <p>
                   I've also worked in software, building <span>ML-powered systems</span> for fraud detection,
