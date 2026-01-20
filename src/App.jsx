@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import SocialRail from "./components/SocialRail/SocialRail";
 
@@ -15,7 +15,7 @@ import Robotics from "./pages/Robotics";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app-wrapper">
         <Routes>
           <Route path="/" element={
@@ -40,7 +40,7 @@ function App() {
       </div>
       <SocialRail />
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
