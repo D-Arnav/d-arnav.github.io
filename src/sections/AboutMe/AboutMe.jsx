@@ -76,7 +76,7 @@ function AboutMe() {
                 <span className="block-lead">Research</span>
                 <p>
                   My research includes text-line segmentation in rock inscriptions, as well as a recent first author paper
-                  submitted to CVPR 2026 on preserving source privacy in domain adaptation {" "}
+                  accepted to CVPR 2026 on preserving source privacy in domain adaptation {" "}
                   <a className="read-more" href="#" onClick={(e) => { e.preventDefault(); document.getElementById('blogs')?.scrollIntoView({ behavior: 'smooth' }); }}>See Blogs</a>
 
                 </p>
