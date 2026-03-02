@@ -14,7 +14,7 @@ function IITBlog() {
 
             <p>
                 This post summarizes my recent research on machine unlearning in source-free domain adaptation,
-                submitted to CVPR 2026. I explain why this problem matters, what we discovered, and how we solve it.
+                accepted to CVPR 2026. I explain why this problem matters, what we discovered, and how we solve it.
             </p>
 
             <BlogImage
