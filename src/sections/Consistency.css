@@ -1,0 +1,132 @@
+.consistency {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.consistency-intro {
+  margin-bottom: 64px;
+}
+
+.consistency-intro .section-title {
+  margin-bottom: 14px;
+}
+
+.consistency-desc {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 520px;
+}
+
+.consistency-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.consistency-year-selector {
+  --year-btn-h: 36px;
+  --year-gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--year-gap);
+  flex-shrink: 0;
+}
+
+.year-list-clip {
+  overflow: hidden;
+  /* Fixed height: VISIBLE_COUNT buttons + (VISIBLE_COUNT - 1) gaps */
+  height: calc(4 * var(--year-btn-h) + 3 * var(--year-gap));
+}
+
+.year-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--year-gap);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.year-list .year-btn {
+  height: var(--year-btn-h);
+  box-sizing: border-box;
+}
+
+.expand-btn {
+  font-size: 14px;
+  padding: 6px 12px;
+  min-width: 40px;
+  opacity: 0.5;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.expand-btn:hover {
+  opacity: 1;
+  color: var(--primary);
+}
+
+.consistency-chart {
+  opacity: 0.85;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.consistency-chart > * {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.consistency-chart svg {
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 900px) {
+  .consistency-intro {
+    margin-bottom: 48px;
+  }
+  .consistency-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .consistency-year-selector {
+    --year-gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--year-gap);
+  }
+  .year-list-clip {
+    height: auto;
+    overflow: visible;
+  }
+  .year-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--year-gap);
+  }
+  .year-list .year-btn {
+    height: auto;
+  }
+  .consistency-chart {
+    overflow-x: auto;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .consistency-desc {
+    font-size: 14px;
+  }
+  .consistency-chart > * {
+    min-width: 600px;
+  }
+}

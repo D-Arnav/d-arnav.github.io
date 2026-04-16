@@ -1,38 +1,34 @@
+import { Fragment } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer/Footer";
-import SocialRail from "./components/SocialRail/SocialRail";
+import Footer from "./components/Footer";
+import SocialRail from "./components/SocialRail";
+import Hero from "./sections/Hero";
+import AboutMe from "./sections/AboutMe";
+import Projects from "./sections/Projects";
+import Tools from "./sections/Tools";
 
-import Hero from "./sections/Hero/Hero";
-import AboutMe from "./sections/AboutMe/AboutMe";
-import Projects from "./sections/Projects/Projects";
-import Tools from "./sections/Tools/Tools";
-import Blogs from "./sections/Blogs/Blogs";
-import Consistency from "./sections/Consistency/Consistency";
-
+import Consistency from "./sections/Consistency";
 import IITBlog from "./pages/IITBlog";
 import IIITBlog from "./pages/IIITBlog";
 import Robotics from "./pages/Robotics";
 
-function App() {
+const homeSections = [Hero, AboutMe, Projects, Tools, Consistency];
+
+function Home() {
+  return homeSections.map((Section, i) => (
+    <Fragment key={i}>
+      {i > 0 && <div className="section-divider" />}
+      <Section />
+    </Fragment>
+  ));
+}
+
+export default function App() {
   return (
     <HashRouter>
       <div className="app-wrapper">
         <Routes>
-          <Route path="/" element={
-            <>
-              <Hero />
-              <div className="home-page-divider" />
-              <AboutMe />
-              <div className="home-page-divider" />
-              <Projects />
-              <div className="home-page-divider" />
-              <Tools />
-              <div className="home-page-divider" />
-              <Blogs />
-              <div className="home-page-divider" />
-              <Consistency />
-            </>
-          } />
+          <Route path="/" element={<Home />} />
           <Route path="/blogs/iit-blog" element={<IITBlog />} />
           <Route path="/blogs/iiit-blog" element={<IIITBlog />} />
           <Route path="/blogs/robotics" element={<Robotics />} />
@@ -43,5 +39,3 @@ function App() {
     </HashRouter>
   );
 }
-
-export default App;

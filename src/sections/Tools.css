@@ -1,0 +1,61 @@
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skill-category-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(243, 183, 200, 0.5);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-pill:hover {
+  border-color: rgba(183, 5, 57, 0.5);
+  background: rgba(183, 5, 57, 0.08);
+}
+
+.skill-pill-icon {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s ease;
+}
+
+.skill-pill:hover .skill-pill-icon {
+  color: var(--secondary);
+}
+
+.skill-pill-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+}
