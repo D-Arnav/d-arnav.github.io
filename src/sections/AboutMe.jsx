@@ -58,9 +58,9 @@ export default function AboutMe() {
               <div className="content-block">
                 <span className="block-lead">Research</span>
                 <p>
-                  First author paper at CVPR 2026 on preserving source privacy in domain adaptation.
+                  First author paper at <span>CVPR 2026</span> on preserving source privacy in domain adaptation.
                   Previous work on text-line segmentation in rock inscriptions.
-                  Currently researching semantic mapping in industrial environments such as shipyards.{" "}
+                  Currently researching <span>semantic mapping</span> in industrial environments such as shipyards.{" "}
                   <a
                     className="read-more"
                     href="#"
