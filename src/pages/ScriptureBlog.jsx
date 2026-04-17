@@ -1,7 +1,7 @@
 import './Blog.css';
 import { BlogTitle, BlogImage, Math } from './Blog';
 
-function IIITBlog() {
+function ScriptureBlog() {
     return (
         <div className="blog-page">
             <BlogTitle
@@ -15,7 +15,7 @@ function IIITBlog() {
                 The problem statement is “Scripture text-line segmentation”, the goal is to find <em>horizontal lines</em> that <em>separate the text</em>. Finding these lines is an integral step in Optical Character Recognition.
             </p>
             <BlogImage
-                src="/blog/iiit-blog/1-intro.png"
+                src="/blog/scripture/intro.png"
                 alt="Text-Line Segmentation Example"
                 caption="Text-line segmentation on a degraded manuscript."
                 scale={40}
@@ -32,7 +32,7 @@ function IIITBlog() {
                 Seam carving is a content-aware liquid resizing algorithm developed in 2007. It works by removing “Seams” which are paths that contribute to low amount of information.
             </p>
             <BlogImage
-                src="/blog/iiit-blog/2-seamcarving.png"
+                src="/blog/scripture/seam-carving.png"
                 alt="Seam Carving Example"
                 caption="Example of seam carving removing low energy seams."
                 scale={40}
@@ -41,7 +41,7 @@ function IIITBlog() {
                 After modifying the code to color the seems black rather than remove them, I was left with this.
             </p>
             <BlogImage
-                src="/blog/iiit-blog/3-resultseamcarving.png"
+                src="/blog/scripture/seam-carving-result.png"
                 alt="Seam Carving Result"
                 caption="Applying modified seam carving on a scripture image."
                 scale={70}
@@ -58,7 +58,7 @@ function IIITBlog() {
                 Since edges are usually straight, and have a low intensity (as they don't overlap with shadows in the text), I figured that the <em>minimas</em> of this histogram would correspond to <em>edges</em>
             </p>
             <BlogImage
-                src="/blog/iiit-blog/8-projectionprofile.png"
+                src="/blog/scripture/projection-profile.png"
                 alt="Projection Profile Example"
                 caption="Projection profile analysis for text-line segmentation."
                 scale={90}
@@ -75,7 +75,7 @@ function IIITBlog() {
                 Here are some major differences in context to the problem
             </p>
             <BlogImage
-                src="/blog/iiit-blog/9-greekasianscripts.png"
+                src="/blog/scripture/greek-asian-scripts.png"
                 alt="Greek vs South Asian Scriptures"
                 caption="Left: Greek Scripture, Right: South Asian Scripture."
                 scale={90}
@@ -107,7 +107,7 @@ function IIITBlog() {
                 </tbody>
             </table>
             <BlogImage
-                src="/blog/iiit-blog/10-diacriticligature.png"
+                src="/blog/scripture/diacritic-ligature.png"
                 alt="Diacritics and Ligatures"
                 caption="Left: Diacritics, Right: Ligatures"
                 scale={70}
@@ -117,19 +117,19 @@ function IIITBlog() {
             </p>
             <h5> Projection Profile with Fourier Series </h5>
             <BlogImage
-                src="/blog/iiit-blog/11-fourieranalysis.png"
+                src="/blog/scripture/fourier-analysis.png"
                 alt="Projection Profile with Fourier Series"
                 scale={80}
             />
             <h5> Projection Profile with Energy Image </h5>
             <BlogImage
-                src="/blog/iiit-blog/4-energy.png"
+                src="/blog/scripture/energy-map.png"
                 alt="Projection Profile with Energy Image"
                 scale={80}
             />
             <h5> Projection Profile with Skew Correction </h5>
             <BlogImage
-                src="/blog/iiit-blog/12-skewcorrection.png"
+                src="/blog/scripture/skew-correction.png"
                 alt="Projection Profile with Skew Correction"
                 scale={80}
             />
@@ -155,7 +155,7 @@ function IIITBlog() {
             </p>
             <h5> The JSON File </h5>
             <BlogImage
-                src="/blog/iiit-blog/5-json.png"
+                src="/blog/scripture/json-annotation.png"
                 alt="JSON File"
                 scale={95}
             />
@@ -172,7 +172,7 @@ function IIITBlog() {
             </p>
 
             <BlogImage
-                src="/blog/iiit-blog/13-binarization.png"
+                src="/blog/scripture/binarization.png"
                 alt="Binarization Process"
                 caption="Left: Original Image, Right: Ideal Binarized Image"
                 scale={80}
@@ -183,7 +183,7 @@ function IIITBlog() {
             </p>
 
             <BlogImage
-                src="/blog/iiit-blog/6-annotation.png"
+                src="/blog/scripture/ground-truth.png"
                 alt="Annotation"
                 caption="Manual annotation of binarized images using polygon tool."
                 scale={80}
@@ -200,7 +200,7 @@ function IIITBlog() {
             </p>
 
             <BlogImage
-                src="/blog/iiit-blog/7-transferlearning.png"
+                src="/blog/scripture/transfer-learning.png"
                 alt="Transfer Learning"
                 caption="Transfer learning"
                 scale={80}
@@ -213,7 +213,7 @@ function IIITBlog() {
             <h5> DocEnTr without Finetuning </h5>
 
             <BlogImage
-                src="/blog/iiit-blog/14-docentr.png"
+                src="/blog/scripture/docentr.png"
                 alt="DocEnTr without Finetuning"
                 scale={80}
             />
@@ -228,7 +228,7 @@ function IIITBlog() {
             </p>
 
             <BlogImage
-                src="/blog/iiit-blog/15-final.png"
+                src="/blog/scripture/final-result.png"
                 alt="3 Stage Task"
                 caption="3 Stage Process for Text-Line Segmentation"
                 scale={80}
@@ -247,4 +247,4 @@ function IIITBlog() {
     );
 }
 
-export default IIITBlog;
+export default ScriptureBlog;

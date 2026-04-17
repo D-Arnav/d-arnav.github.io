@@ -112,9 +112,13 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: var(--year-gap);
+    transform: none !important;
   }
   .year-list .year-btn {
     height: auto;
+  }
+  .expand-btn {
+    display: none;
   }
   .consistency-chart {
     overflow-x: auto;

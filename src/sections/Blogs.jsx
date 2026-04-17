@@ -4,12 +4,12 @@ import "./Blogs.css";
 
 const blogs = [
   {
-    to: "/blogs/iit-blog",
+    to: "/blogs/scada",
     title: "Ø Source Models Leak What They Shouldn't ↛: Unlearning Zero-Shot Transfer in Domain Adaptation Through Adversarial Optimization",
     date: "Jan 2, 2026",
   },
   {
-    to: "/blogs/iiit-blog",
+    to: "/blogs/scripture",
     title: "Scripture Text-Line Segmentation",
     date: "June 2, 2023",
   },

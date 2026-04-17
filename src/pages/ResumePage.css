@@ -1,0 +1,452 @@
+.resume-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ===== Top bar ===== */
+.resume-page-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 24px;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.resume-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, rgba(183, 5, 57, 0.1) 0%, rgba(183, 5, 57, 0.05) 100%);
+  border: 1px solid rgba(183, 5, 57, 0.5);
+  border-radius: 10px;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.resume-back-btn:hover {
+  background: linear-gradient(135deg, rgba(183, 5, 57, 0.2) 0%, rgba(183, 5, 57, 0.1) 100%);
+  border-color: rgba(183, 5, 57, 0.8);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(183, 5, 57, 0.25);
+}
+
+.resume-page-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Jersey 20", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  pointer-events: none;
+}
+
+.resume-page-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.resume-page-date {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.resume-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, rgba(183, 5, 57, 0.1) 0%, rgba(183, 5, 57, 0.05) 100%);
+  border: 1px solid rgba(183, 5, 57, 0.5);
+  border-radius: 10px;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.resume-download-btn:hover {
+  background: linear-gradient(135deg, rgba(183, 5, 57, 0.2) 0%, rgba(183, 5, 57, 0.1) 100%);
+  border-color: rgba(183, 5, 57, 0.8);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(183, 5, 57, 0.25);
+}
+
+.resume-download-btn svg {
+  font-size: 18px;
+}
+
+/* ===== Body scroll area ===== */
+.resume-page-body {
+  flex: 1;
+  overflow-y: auto;
+  display: block;
+  text-align: center;
+  padding: 40px 24px 0;
+}
+
+.resume-page-body .rv {
+  display: inline-block;
+  text-align: left;
+}
+
+.resume-page-body::after {
+  content: "";
+  display: block;
+  height: 120px;
+}
+
+.resume-page-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.resume-page-body::-webkit-scrollbar-thumb {
+  background: rgba(183, 5, 57, 0.25);
+  border-radius: 4px;
+}
+
+.resume-page-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(183, 5, 57, 0.45);
+}
+
+/* ===== Resume container ===== */
+.rv {
+  max-width: 820px;
+  width: 100%;
+  user-select: text;
+}
+
+/* ===== Header ===== */
+.rv-header {
+  text-align: center;
+  margin-bottom: 36px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(183, 5, 57, 0.2);
+}
+
+.rv-name {
+  font-family: "Jersey 20", sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  text-shadow:
+    0 0 20px rgba(183, 5, 57, 0.3),
+    0 0 40px rgba(183, 5, 57, 0.15);
+  margin-bottom: 14px;
+}
+
+.rv-contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.rv-contact span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rv-contact svg {
+  font-size: 15px;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+/* ===== Section ===== */
+.rv-section {
+  margin-bottom: 28px;
+}
+
+.rv-section-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--primary);
+  text-shadow: 0 0 12px rgba(183, 5, 57, 0.3);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(183, 5, 57, 0.15);
+}
+
+/* ===== Entry (experience / education / activity) ===== */
+.rv-entry {
+  margin-bottom: 20px;
+}
+
+.rv-entry:last-child {
+  margin-bottom: 0;
+}
+
+.rv-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 6px;
+}
+
+.rv-org {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.rv-org-sep {
+  color: rgba(255, 255, 255, 0.2);
+  margin: 0 4px;
+  font-weight: 400;
+}
+
+.rv-advisor {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.rv-role {
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  color: var(--secondary);
+  font-weight: 500;
+  margin-top: 1px;
+}
+
+.rv-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+  gap: 2px;
+}
+
+.rv-location {
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.rv-date {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* ===== Bullets ===== */
+.rv-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rv-bullets li {
+  position: relative;
+  padding-left: 16px;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 4px;
+}
+
+.rv-bullets li:last-child {
+  margin-bottom: 0;
+}
+
+.rv-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 6px rgba(183, 5, 57, 0.5);
+}
+
+.rv-bullets strong {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+/* ===== Skills ===== */
+.rv-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rv-skill-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.rv-skill-label {
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  flex-shrink: 0;
+  min-width: 120px;
+}
+
+.rv-skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.rv-tag {
+  padding: 3px 10px;
+  background: rgba(183, 5, 57, 0.1);
+  border: 1px solid rgba(183, 5, 57, 0.3);
+  border-radius: 999px;
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+}
+
+.rv-tag:hover {
+  background: rgba(183, 5, 57, 0.2);
+  border-color: rgba(183, 5, 57, 0.5);
+  box-shadow: 0 0 8px rgba(183, 5, 57, 0.2);
+}
+
+/* ===== Publications ===== */
+.rv-publications {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.rv-publications li {
+  position: relative;
+  padding-left: 16px;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.rv-publications li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 6px rgba(183, 5, 57, 0.5);
+}
+
+.rv-publications strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.rv-publications em {
+  color: var(--secondary);
+  font-style: italic;
+}
+
+.rv-venue {
+  color: var(--primary);
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(183, 5, 57, 0.3);
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .resume-page {
+    height: auto;
+    min-height: 100vh;
+    overflow: auto;
+  }
+
+  .resume-page-topbar {
+    padding: 12px 16px;
+  }
+
+  .resume-page-title {
+    font-size: 18px;
+  }
+
+  .resume-back-btn,
+  .resume-download-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .resume-page-date {
+    display: none;
+  }
+
+  .resume-page-body {
+    padding: 28px 16px 48px;
+  }
+
+  .rv-name {
+    font-size: 36px;
+  }
+
+  .rv-contact {
+    gap: 6px 16px;
+    font-size: 13px;
+  }
+
+  .rv-entry-header {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .rv-meta {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .rv-skill-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .rv-skill-label {
+    min-width: auto;
+  }
+}

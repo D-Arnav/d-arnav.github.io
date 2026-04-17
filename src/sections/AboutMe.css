@@ -170,6 +170,10 @@
   width: 100%;
 }
 
+.resume-actions-mobile {
+  display: none;
+}
+
 .resume-btn {
   display: inline-flex;
   align-items: center;
@@ -250,7 +254,16 @@
     font-size: 16px;
   }
 
-  .about-visual {
-    max-width: 100%;
+  .about-left-column {
+    display: none;
+  }
+
+  .resume-actions-mobile {
+    display: flex;
+    margin-top: 16px;
+  }
+
+  .about-title-section {
+    margin-bottom: 32px;
   }
 }

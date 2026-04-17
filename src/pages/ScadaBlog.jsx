@@ -1,7 +1,7 @@
 import './Blog.css';
 import { BlogTitle, BlogImage, Math } from './Blog';
 
-function IITBlog() {
+function ScadaBlog() {
     return (
         <div className='blog-page'>
             <BlogTitle
@@ -18,7 +18,7 @@ function IITBlog() {
             </p>
 
             <BlogImage
-                src="/blog/iit-blog/method.png"
+                src="/blog/scada/method.png"
                 alt="Method Image"
                 caption="Overview of the Proposed Method: SCADA-UL (Unlearning Source-exclusive ClAsses in Domain Adaptation)"
                 scale={90}
@@ -73,7 +73,7 @@ function IITBlog() {
 
             <h2>Problem Setting: SCADA-UL</h2>
             <BlogImage
-                src="/blog/iit-blog/setting.png"
+                src="/blog/scada/setting.png"
                 alt="SCADA-UL Setting"
                 caption="Conventional Unlearning vs. SCADA-UL Setting"
                 scale={50}
@@ -107,7 +107,7 @@ function IITBlog() {
                 (forget) class in the model. This is done through gradient-based optimization starting from random noise.
             </p>
             <BlogImage
-                src="/blog/iit-blog/adversarial.png"
+                src="/blog/scada/adversarial.png"
                 alt="Adversarial Samples"
                 caption="Adversarial samples of class 'backpack' don't visually resemble backpacks"
                 scale={70}
@@ -273,4 +273,4 @@ function IITBlog() {
     );
 }
 
-export default IITBlog;
+export default ScadaBlog;

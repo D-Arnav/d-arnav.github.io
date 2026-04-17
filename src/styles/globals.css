@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 html,
@@ -87,6 +88,26 @@ body::before {
     0 0 32px rgba(183, 5, 57, 0.2),
     0 0 48px rgba(183, 5, 57, 0.1);
   transition: text-shadow 0.3s ease;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* When footer is inside the last snap section, switch to space-between
+   so content stays centered and footer pins to the bottom */
+.snap-section:last-child:has(.footer) {
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+
+.snap-section:last-child:has(.footer) > :first-child {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .section-divider {
