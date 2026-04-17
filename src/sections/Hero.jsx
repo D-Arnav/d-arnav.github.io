@@ -17,11 +17,11 @@ export default function Hero() {
         </p>
         <h1 className="hero-title">
           <span className="hero-glow">
-            I'm interested in Building perception systems for robots.
+            I'm interested in Building perception systems for real-world robots.
           </span>
         </h1>
         <p className="hero-description">
-          My background spans award-winning competition robots, computer vision
+          My background spans award-winning competition robots, computer vision and robotics
           research, and real-world ML systems.
         </p>
       </Motion.section>
