@@ -1,10 +1,13 @@
-import { FiGithub, FiCode, FiLinkedin } from "react-icons/fi";
+import { FiGithub, FiCode, FiLinkedin, FiMail } from "react-icons/fi";
+import { SiGooglescholar } from "react-icons/si";
 import "./SocialRail.css";
 
 const links = [
   { href: "https://github.com/d-arnav", label: "GitHub", Icon: FiGithub },
   { href: "https://leetcode.com/u/Darnav", label: "LeetCode", Icon: FiCode },
   { href: "https://www.linkedin.com/in/darnav/", label: "LinkedIn", Icon: FiLinkedin },
+  { href: "https://scholar.google.com/citations?user=MnnRfHgAAAAJ&hl=en", label: "Google Scholar", Icon: SiGooglescholar },
+  { href: "mailto:darnav@umich.edu", label: "Email", Icon: FiMail },
 ];
 
 export default function SocialRail() {
