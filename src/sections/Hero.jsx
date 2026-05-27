@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion as Motion } from "framer-motion";
 import Lottie from "lottie-react";
-import rocketAnimation from "../assets/lottie/rocket.json";
+import carAnimation from "../assets/lottie/car.json";
 import "./Hero.css";
 
 export default function Hero() {
@@ -61,7 +61,7 @@ export default function Hero() {
       <div className="hero-visual" ref={containerRef}>
         <Lottie
           lottieRef={lottieRef}
-          animationData={rocketAnimation}
+          animationData={carAnimation}
           loop
           autoplay
           speed={0.35}
