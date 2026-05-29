@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useParams } from "react-router-dom";
 import { Document, Page, pdfjs } from "react-pdf";
-import { IoChevronBack, IoChevronForward, IoArrowBack } from "react-icons/io5";
+import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 import "react-pdf/dist/Page/TextLayer.css";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "./PptViewer.css";
@@ -42,10 +42,6 @@ export default function PptViewer() {
   return (
     <div className="ppt-viewer">
       <div className="ppt-topbar">
-        <a href="/#/" className="ppt-back-btn">
-          <IoArrowBack />
-          Back
-        </a>
         <span className="ppt-title">{title}</span>
         <span className="ppt-counter">
           {slide} / {numPages || "-"}
