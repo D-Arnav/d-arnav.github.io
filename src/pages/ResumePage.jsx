@@ -1,5 +1,5 @@
 import { MdOutlineFileDownload } from "react-icons/md";
-import { IoArrowBack, IoMailOutline, IoCallOutline, IoLocationOutline, IoGlobeOutline } from "react-icons/io5";
+import { IoMailOutline, IoCallOutline, IoLocationOutline, IoGlobeOutline } from "react-icons/io5";
 import "./ResumePage.css";
 
 const RESUME_PATH = "/resume.pdf";
@@ -9,10 +9,6 @@ export default function ResumePage() {
   return (
     <div className="resume-page">
       <div className="resume-page-topbar">
-        <a href="/#/" className="resume-back-btn">
-          <IoArrowBack />
-          Back
-        </a>
         <span className="resume-page-title">Résumé</span>
         <div className="resume-page-right">
           <span className="resume-page-date">Updated {UPLOADED_DATE}</span>

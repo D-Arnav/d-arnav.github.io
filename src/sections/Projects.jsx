@@ -8,6 +8,14 @@ import Reveal from "../components/Reveal";
 import "./Projects.css";
 const projects = [
   {
+    title: "Shipyard Semantic Mapping",
+    org: "UM Robex Lab",
+    duration: "Ongoing",
+    description: "BIM-guided semantic SLAM for ship construction environments — leveraging door and column meshes as priors to identify and refine object representations within building scenes.",
+    tags: ["SLAM", "Semantic Mapping", "3D Vision", "Research"],
+    image: "/projects/bimslam.jpg",
+  },
+  {
     title: "SCADA Unlearning",
     org: "IIT Hyderabad, CVPR 2026",
     duration: "Mar 2026",
@@ -19,18 +27,6 @@ const projects = [
       paper: "https://arxiv.org/abs/2604.08238",
       github: "https://github.com/D-Arnav/SCADA",
       blog: "/#/blogs/scada",
-    },
-  },
-  {
-    title: "Scripture Text Segmentation",
-    org: "IIIT Hyderabad",
-    duration: "Jun 2023",
-    description: "OCR preprocessing pipeline for degraded South Asian manuscripts using seam carving, projection profiles, and transfer learning with DocEnTr.",
-    tags: ["Computer Vision", "Transfer Learning", "Research"],
-    image: "/blog/scripture/intro.png",
-    click: "/#/blogs/scripture",
-    links: {
-      blog: "/#/blogs/scripture",
     },
   },
   {
@@ -57,14 +53,6 @@ const projects = [
       github: "https://github.com/umigv/cv-depth-segmentation",
       demo: "https://www.youtube.com/shorts/LlErjdI5gNo",
     },
-  },
-  {
-    title: "Shipyard Semantic Mapping",
-    org: "UM Robex Lab",
-    duration: "Ongoing",
-    description: "BIM-guided semantic SLAM for ship construction environments — leveraging door and column meshes as priors to identify and refine object representations within building scenes.",
-    tags: ["SLAM", "Semantic Mapping", "3D Vision", "Research"],
-    image: "/projects/bimslam.jpg",
   },
   {
     title: "3D Novel Object View",
@@ -115,6 +103,25 @@ const projects = [
     },
   },
   {
+    title: "Scripture Text Segmentation",
+    org: "IIIT Hyderabad",
+    duration: "Jun 2023",
+    description: "OCR preprocessing pipeline for degraded South Asian manuscripts using seam carving, projection profiles, and transfer learning with DocEnTr.",
+    tags: ["Computer Vision", "Transfer Learning", "Research"],
+    image: "/blog/scripture/intro.png",
+    click: "/#/blogs/scripture",
+    links: {
+      blog: "/#/blogs/scripture",
+    },
+  },
+  {
+    title: "Object Trajectory Estimation",
+    duration: "Mar 2023",
+    description: "Predicts projectile trajectories in real time by segmenting the object, tracking its centroid, and least-squares fitting a parabola to the last K samples.",
+    tags: ["Computer Vision", "Python", "OpenCV"],
+    image: "/projects/trajectory-estimation.jpg",
+  },
+  {
     title: "Chess in JS",
     duration: "Oct 2022",
     description: "Fully playable chess engine built from scratch including move validation, check/checkmate detection, and special rules (castling, enpassant, promotion) with 0 libraries.",
@@ -125,13 +132,6 @@ const projects = [
       github: "https://github.com/D-Arnav/Chess-in-JS",
       ppt: "/#/ppt/chess-in-js",
     },
-  },
-  {
-    title: "Object Trajectory Estimation",
-    duration: "Mar 2023",
-    description: "Predicts projectile trajectories in real time by segmenting the object, tracking its centroid, and least-squares fitting a parabola to the last K samples.",
-    tags: ["Computer Vision", "Python", "OpenCV"],
-    image: "/projects/trajectory-estimation.jpg",
   },
 ];
 

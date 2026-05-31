@@ -51,6 +51,7 @@
 .year-list .year-btn {
   height: var(--year-btn-h);
   box-sizing: border-box;
+  justify-content: center;
 }
 
 .expand-btn {
