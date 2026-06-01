@@ -152,7 +152,15 @@
   text-shadow:
     0 0 20px rgba(183, 5, 57, 0.3),
     0 0 40px rgba(183, 5, 57, 0.15);
-  margin-bottom: 14px;
+  margin-bottom: 8px;
+}
+
+.rv-tagline {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: var(--primary);
+  margin-bottom: 16px;
 }
 
 .rv-contact {

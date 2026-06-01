@@ -3,7 +3,7 @@ import { IoMailOutline, IoCallOutline, IoLocationOutline, IoGlobeOutline } from 
 import "./ResumePage.css";
 
 const RESUME_PATH = "/resume.pdf";
-const UPLOADED_DATE = "April 2026";
+const UPLOADED_DATE = "June 2026";
 
 export default function ResumePage() {
   return (
@@ -24,6 +24,7 @@ export default function ResumePage() {
           {/* Header */}
           <header className="rv-header">
             <h1 className="rv-name">Arnav Devalapally</h1>
+            <p className="rv-tagline">Perception ML Research Engineer</p>
             <div className="rv-contact">
               <span><IoMailOutline /> darnav@umich.edu</span>
               <span><IoCallOutline /> +1 (734) 596-7411</span>
@@ -48,7 +49,7 @@ export default function ResumePage() {
               </div>
               <ul className="rv-bullets">
                 <li>GPA: <strong>4.0/4.0</strong></li>
-                <li>Coursework: Advanced Computer Vision, Robot Kinematics &amp; Dynamics, Control Systems, Microarchitecture</li>
+                <li>Coursework: Advanced Computer Vision, Self-Driving Cars, Robot Kinematics &amp; Dynamics, Control Systems</li>
               </ul>
             </div>
             <div className="rv-entry">
@@ -63,7 +64,7 @@ export default function ResumePage() {
                 </div>
               </div>
               <ul className="rv-bullets">
-                <li>GPA: <strong>9.8/10.0</strong> (Silver Medalist)</li>
+                <li>GPA: <strong>3.9/4.0</strong> (President's Silver Medalist)</li>
               </ul>
             </div>
           </section>
@@ -81,13 +82,13 @@ export default function ResumePage() {
               <div className="rv-skill-row">
                 <span className="rv-skill-label">Systems & Tools</span>
                 <span className="rv-skill-tags">
-                  {["ROS2", "CUDA", "Linux", "Git", "Docker", "PostgreSQL", "SLURM", "Simulink"].map(s => <span key={s} className="rv-tag">{s}</span>)}
+                  {["ROS2", "CUDA", "Isaac Sim", "TensorRT", "Docker", "SLURM", "AWS", "Linux", "Git"].map(s => <span key={s} className="rv-tag">{s}</span>)}
                 </span>
               </div>
               <div className="rv-skill-row">
                 <span className="rv-skill-label">Perception</span>
                 <span className="rv-skill-tags">
-                  {["PyTorch", "OpenCV", "ViT", "NeRF", "Domain Adaptation", "Sensor Fusion", "Occupancy Grid", "Point Cloud", "Depth Camera"].map(s => <span key={s} className="rv-tag">{s}</span>)}
+                  {["PyTorch", "OpenCV", "Open3D", "Domain Adaptation", "3D Object Detection", "Sensor Fusion", "Occupancy Mapping", "CLIP", "DINOv2", "Grounding DINO", "NeRF", "Point Clouds"].map(s => <span key={s} className="rv-tag">{s}</span>)}
                 </span>
               </div>
             </div>
@@ -100,8 +101,40 @@ export default function ResumePage() {
             <div className="rv-entry">
               <div className="rv-entry-header">
                 <div>
-                  <h3 className="rv-org">IIT Hyderabad <span className="rv-org-sep">|</span> <span className="rv-advisor">Advisor: Vineeth N B</span></h3>
-                  <p className="rv-role">Machine Learning Research Intern</p>
+                  <h3 className="rv-org">Parsons Corporation</h3>
+                  <p className="rv-role">Perception ML Research Engineering Intern</p>
+                </div>
+                <div className="rv-meta">
+                  <span className="rv-date">May 2026 - Present</span>
+                </div>
+              </div>
+              <ul className="rv-bullets">
+                <li>Build perception systems that detect <strong>15+</strong> roadway assets and defects (potholes, cracks, worn and fallen signs) from raw camera and LiDAR data across two client deployments.</li>
+                <li>Own an end-to-end road-sign pipeline: detection, multi-view association and clustering, prediction pooling, and zero-shot classification with foundation models (Grounding DINO, DINOv2, CLIP).</li>
+              </ul>
+            </div>
+
+            <div className="rv-entry">
+              <div className="rv-entry-header">
+                <div>
+                  <h3 className="rv-org">University of Michigan <span className="rv-org-sep">|</span> <span className="rv-advisor">Advisor: Alan Papalia</span></h3>
+                  <p className="rv-role">Research Assistant, Perception &amp; Simulation</p>
+                </div>
+                <div className="rv-meta">
+                  <span className="rv-location">Ann Arbor, MI</span>
+                  <span className="rv-date">Mar 2026 - May 2026</span>
+                </div>
+              </div>
+              <ul className="rv-bullets">
+                <li>Built a detailed Isaac Sim environment with a payload-equipped Boston Dynamics Spot (Ouster OS0 LiDAR, ZED 2i stereo, VN-100 IMU) to generate synthetic training data.</li>
+              </ul>
+            </div>
+
+            <div className="rv-entry">
+              <div className="rv-entry-header">
+                <div>
+                  <h3 className="rv-org">IIT Hyderabad <span className="rv-org-sep">|</span> <span className="rv-advisor">Advisor: Vineeth N. Balasubramanian</span></h3>
+                  <p className="rv-role">Computer Vision Researcher (Part-time)</p>
                 </div>
                 <div className="rv-meta">
                   <span className="rv-location">Hyderabad, India</span>
@@ -109,7 +142,8 @@ export default function ResumePage() {
                 </div>
               </div>
               <ul className="rv-bullets">
-                <li>Conducted research in domain adaptation for deep learning for perception (ViT, ResNet) under distribution shift.</li>
+                <li>Designed a domain-adaptation framework that unlearns sensitive classes; benchmarked leakage with membership-inference attacks: <strong>22%</strong> lower attack success than the source model, beating 5+ baselines on DomainNet-126.</li>
+                <li>Ran <strong>500+</strong> experiments on a SLURM cluster to produce 30+ tables of ablations and baselines.</li>
                 <li>First-author paper accepted to <strong>CVPR 2026</strong>.</li>
               </ul>
             </div>
@@ -117,52 +151,17 @@ export default function ResumePage() {
             <div className="rv-entry">
               <div className="rv-entry-header">
                 <div>
-                  <h3 className="rv-org">IIIT Hyderabad <span className="rv-org-sep">|</span> <span className="rv-advisor">Advisor: Ravi Kiran S</span></h3>
-                  <p className="rv-role">Computer Vision Research Intern</p>
+                  <h3 className="rv-org">PXP Financial &amp; Payintelli</h3>
+                  <p className="rv-role">ML Systems Engineer, FinTech</p>
                 </div>
                 <div className="rv-meta">
                   <span className="rv-location">Hyderabad, India</span>
-                  <span className="rv-date">May 2023 - July 2023</span>
+                  <span className="rv-date">Feb 2025 - Aug 2025</span>
                 </div>
               </div>
               <ul className="rv-bullets">
-                <li>Developed classical and deep learning models (ViT, CNN, U-Net) for segmentation in challenging visual conditions.</li>
-                <li>Evaluated state-of-the-art binarization model, improving performance via Focal Loss (<strong>+1.3 PSNR</strong>).</li>
-              </ul>
-            </div>
-
-            <div className="rv-entry">
-              <div className="rv-entry-header">
-                <div>
-                  <h3 className="rv-org">Payintelli</h3>
-                  <p className="rv-role">AI Consultant</p>
-                </div>
-                <div className="rv-meta">
-                  <span className="rv-location">Hyderabad, India</span>
-                  <span className="rv-date">June 2025 - Aug 2025</span>
-                </div>
-              </div>
-              <ul className="rv-bullets">
-                <li>Developed and evaluated fraud detection ML models on 1M+ real-world transactions at production scale.</li>
-                <li>Implemented a client-centric static rule base and decision thresholds to manage the recall-false positive tradeoff.</li>
-                <li>Delivered production-ready APIs integrated with frontend dashboards for performance monitoring.</li>
-              </ul>
-            </div>
-
-            <div className="rv-entry">
-              <div className="rv-entry-header">
-                <div>
-                  <h3 className="rv-org">PXP Financial</h3>
-                  <p className="rv-role">Business Intelligence Intern</p>
-                </div>
-                <div className="rv-meta">
-                  <span className="rv-location">Hyderabad, India</span>
-                  <span className="rv-date">Feb 2025 - June 2025</span>
-                </div>
-              </div>
-              <ul className="rv-bullets">
-                <li>Trained ML-based classification models for deployment-critical systems under performance and latency constraints.</li>
-                <li>Built reusable queries and reporting pipelines to track performance drift and trigger retraining.</li>
+                <li>Built fraud-detection models on 1M+ transactions, raising fraud recall <strong>50%</strong> while keeping false positives under 1% with calibrated thresholds.</li>
+                <li>Served models at under <strong>100 ms</strong> latency across 500k+ transactions.</li>
               </ul>
             </div>
           </section>
@@ -192,15 +191,16 @@ export default function ResumePage() {
               <div className="rv-entry-header">
                 <div>
                   <h3 className="rv-org">University of Michigan Autonomous Robot Vehicle Team (UMARV)</h3>
-                  <p className="rv-role">Computer Vision Team Member</p>
+                  <p className="rv-role">Perception — Maverick, Autonomous Robot (IGVC)</p>
                 </div>
                 <div className="rv-meta">
                   <span className="rv-location">Ann Arbor, MI</span>
-                  <span className="rv-date">Jan 2026 - Present</span>
+                  <span className="rv-date">Jan 2026 - Apr 2026</span>
                 </div>
               </div>
               <ul className="rv-bullets">
-                <li>Built sensor calibration and perception tooling to fuse multiple depth-camera inputs (point clouds, occupancy grids) and communicate outputs via ROS2 (rclpy) for downstream planning and control in autonomous vehicle stack.</li>
+                <li>Fused two ZED 2i stereo cameras into one occupancy grid, removing blind spots and expanding coverage <strong>~20%</strong>.</li>
+                <li>Cut perception latency from ~160 ms to <strong>~30 ms</strong> with GPU acceleration (PyTorch + CUDA), and built a calibration UI for tuning the 3-DoF camera poses.</li>
               </ul>
             </div>
 

@@ -47,20 +47,20 @@ export default function AboutMe() {
               <div className="content-block">
                 <span className="block-lead">Now</span>
                 <p>
-                  CSE Masters student at the <span>University of Michigan</span> specializing in
-                  <span> robot perception</span>. I build perception systems on the
-                  <span> UM Autonomous Robotic Vehicle Team (UMARV)</span> for the IGVC Self-Drive competition
-                  and work on semantic mapping for industrial environments at the
-                  <span> UM Robot Exploration Lab (RobEx)</span>.
+                  CSE Masters student at the <span>University of Michigan</span> and a
+                  <span> Perception ML Research Engineer</span>. Currently interning at
+                  <span> Parsons</span>, building camera + LiDAR perception systems that detect roadway
+                  assets and defects across client deployments.
                 </p>
               </div>
 
               <div className="content-block">
                 <span className="block-lead">Research</span>
                 <p>
-                  First author paper at <span>CVPR 2026</span> on preserving source privacy in domain adaptation.
-                  Previous work on text-line segmentation in rock inscriptions.
-                  Currently researching <span>semantic mapping</span> in industrial environments such as shipyards.{" "}
+                  First author paper at <span>CVPR 2026</span> on unlearning zero-shot transfer in domain adaptation.
+                  At UM I built <span>Isaac Sim</span> environments with a Boston Dynamics Spot to generate
+                  synthetic perception data, alongside semantic mapping for industrial environments.
+                  Earlier work on text-line segmentation in rock inscriptions.{" "}
                   <a
                     className="read-more"
                     href="#"

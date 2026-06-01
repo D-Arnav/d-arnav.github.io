@@ -1,15 +1,14 @@
 import {
   SiPython, SiPytorch, SiOpencv, SiFastapi,
   SiDocker, SiGit, SiLinux, SiCplusplus, SiNvidia, SiRos,
-  SiAmazonwebservices, SiJavascript, SiGnubash, SiKubernetes,
-  SiPostgresql, SiApachekafka, SiScikitlearn, SiGithubactions,
+  SiAmazonwebservices, SiJavascript, SiGnubash,
+  SiPostgresql, SiApachekafka, SiGithubactions,
   SiPytest, SiHuggingface,
 } from "react-icons/si";
 import Reveal from "../components/Reveal";
 import SlurmIcon from "../assets/SlurmIcon";
 import MatlabIcon from "../assets/MatlabIcon";
 import Open3dIcon from "../assets/Open3dIcon";
-import SimulinkIcon from "../assets/SimulinkIcon";
 import NerfIcon from "../assets/NerfIcon";
 import SensorFusionIcon from "../assets/SensorFusionIcon";
 import SlamIcon from "../assets/SlamIcon";
@@ -35,8 +34,9 @@ const groups = [
       { name: "OpenCV", Icon: SiOpencv },
       { name: "Open3D", Icon: Open3dIcon },
       { name: "CUDA", Icon: SiNvidia },
-      { name: "Transformers", Icon: SiHuggingface },
-      { name: "scikit-learn", Icon: SiScikitlearn },
+      { name: "VLMs (CLIP, DINOv2)", Icon: SiHuggingface },
+      { name: "Grounding DINO", Icon: SiHuggingface },
+      { name: "Domain Adaptation", Icon: SiPytorch },
       { name: "NeRF", Icon: NerfIcon },
       { name: "Sensor Fusion", Icon: SensorFusionIcon },
       { name: "Semantic SLAM", Icon: SlamIcon },
@@ -46,10 +46,10 @@ const groups = [
     category: "Robotics & Systems",
     items: [
       { name: "ROS2", Icon: SiRos },
-      { name: "Simulink", Icon: SimulinkIcon },
+      { name: "Isaac Sim", Icon: SiNvidia },
+      { name: "TensorRT", Icon: SiNvidia },
       { name: "Linux", Icon: SiLinux },
       { name: "Docker", Icon: SiDocker },
-      { name: "Kubernetes", Icon: SiKubernetes },
       { name: "SLURM", Icon: SlurmIcon },
       { name: "Git", Icon: SiGit },
     ],

@@ -42,11 +42,11 @@ const projects = [
     }
   },
   {
-    title: "mARVin",
-    org: "UM Autonomous Robot Vehicle Club",
-    duration: "Mar 2026",
-    description: "Stereo depth camera fusion pipeline merging dual ZED 2i point clouds and BEV occupancy grids for a wider field of view on an autonomous vehicle.",
-    tags: ["Robotics", "3D Vision", "PyTorch", "CUDA", "ROS"],
+    title: "Maverick",
+    org: "UMARV — IGVC",
+    duration: "Jan 2026",
+    description: "Fused two ZED 2i stereo cameras into one occupancy grid to remove blind spots (~20% wider coverage) and cut perception latency from ~160 ms to ~30 ms with GPU acceleration.",
+    tags: ["Robotics", "Sensor Fusion", "PyTorch", "CUDA", "ROS2"],
     image: "/projects/camera-merge.jpg",
     click: "https://github.com/umigv/cv-depth-segmentation",
     links: {
